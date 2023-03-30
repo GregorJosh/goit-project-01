@@ -4,6 +4,8 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+
 @import "./utils/normalize";
 @import "./utils/variables";
 
@@ -13,3 +15,4 @@
 @import "./components/button";
 
 @import './partials/example';
+
