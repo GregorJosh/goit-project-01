@@ -1,0 +1,64 @@
+.form-field {
+    color: $color4;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    &:has(&__text-input:not(:placeholder-shown):valid) {
+        color: green;
+
+        .form-field__text-input {
+            border: 1px solid green;
+        }
+
+        .form-field__correct-state-icon {
+            display: block;
+            fill: green;
+        }
+    }
+
+    &:has(&__text-input:not(:placeholder-shown):invalid) {
+        color: red;
+
+        .form-field__text-input {
+            border: 1px solid red;
+        }
+
+        .form-field__error-state-icon {
+            display: block;
+            fill: red;
+        }
+    }
+
+    &__text-input {
+        color: $color8;
+        border: 1px solid $color5;
+        border-radius: 4px;
+        padding: 16px;
+
+        &::placeholder {
+            color: $color6;
+        }
+    }
+
+    &:hover {
+        color: $color7;
+
+        .form-field__text-input {
+            border: 1px solid $color7;
+        }
+    }
+
+    &__correct-state-icon,
+    &__error-state-icon {
+        position: absolute;
+        right: 16px;
+        bottom: 14px;
+        display: none;
+    }
+}

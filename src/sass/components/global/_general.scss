@@ -1,0 +1,9 @@
+body {
+    font-family: $fontFamily1;
+}
+
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}

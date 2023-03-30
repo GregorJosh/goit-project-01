@@ -1,0 +1,16 @@
+.button {
+    background-color: $brandColor1;
+    color: $color2;
+    border: none;
+    border-radius: 38px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+
+    padding: 14px 28px;
+
+    &:hover {
+        background-color: $brandColor2;
+    }
+}
