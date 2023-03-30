@@ -4,4 +4,12 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import "./utils/normalize";
+@import "./utils/variables";
+
+@import "./generic/typography";
+
+@import "./components/general";
+@import "./components/button";
+
 @import './partials/example';
