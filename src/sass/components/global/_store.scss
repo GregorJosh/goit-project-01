@@ -2,6 +2,7 @@
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  padding: 0;
   list-style: none;
 
   &__item {
@@ -11,6 +12,10 @@
 
 .product-card {
   margin: 0;
+
+  &__image {
+    max-width: 136px;
+  }
 
   &__heading {
     margin: 12px 0 6px;
