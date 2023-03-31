@@ -10,8 +10,10 @@
 @import "./utils/normalize";
 @import "./utils/variables";
 
-@import "./components/general";
-@import "./components/button";
+@import "./components/global/general";
+@import "./components/global/button";
+@import "./components/global/logo";
+@import "./components/global/form-field";
+@import "./components/global/section-heading";
 
-@import './partials/example';
-
+@import './partials/global';
