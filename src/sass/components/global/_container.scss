@@ -1,5 +1,6 @@
 .container {
-  min-width: 320px;
+  // min-width: 320px;
+  min-width: calc(320px - 50px);
   max-width: calc(480px - 30px);
   margin: 0 auto;
   padding: 0 15px;
