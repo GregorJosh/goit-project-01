@@ -1,7 +1,8 @@
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal>
   <div class="contact">
-    <h3>Contact us</h3>
-    <p>
+    <button class="close-btn" type="button" data-modal-close>&#10005;</button>
+    <h3 class="contact__heading">Contact us</h3>
+    <p class="contact__description">
       If you have any additional questions or you want to clarify something before you make an order
       please fill in your contact details. We will call you back.
     </p>
@@ -13,7 +14,7 @@
           type="text"
           id="name"
           name="name"
-          placeholder="Your name"
+          placeholder="Kristin Watson"
           pattern="[A-Za-z0-9]+"
         />
         <svg class="form-field__correct-state-icon" width="20" height="20">
@@ -30,7 +31,7 @@
           type="email"
           id="email"
           name="email"
-          placeholder="tanya.hill@example.com"
+          placeholder="kristin.watson@example.com"
           pattern="[A-Za-z0-9]+"
         />
         <svg class="form-field__correct-state-icon" width="20" height="20">
@@ -40,7 +41,8 @@
           <use href="./images/global/svg/text-input-states.svg#error-state"></use>
         </svg>
       </label>
-      <button class="button" type="button">Send</button>
+      <button class="button" type="submit">Send</button>
     </form>
   </div>
 </div>
+<script src="./js/modal.js"></script>
