@@ -8,16 +8,18 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color2;
-  padding: 0 20px;
+  //   padding: 0 20px;
+  padding: 16px 16px 0 16px;
 
   /* Mobile Styling */
   @media screen and (min-width: 768px) {
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    padding: 0;
+    padding: 16px 16px 0 16px;
   }
 }
 
@@ -72,18 +74,33 @@
   }
 }
 
+/* ------ Modal for mobile menu ------*/
+
 .navbar__modal {
   display: none;
   position: fixed;
   inset: 0;
-  color: white;
+  color: $color2;
   background-color: $brandColor1;
   z-index: 1;
   text-align: right;
 }
 
+// .navbar__modal-menu{
+//     display: flex;
+// }
+
 .navbar__modal-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
   text-align: center;
+}
+
+.navbar__modal-menu-list .navbar__modal-menu-link {
+  text-decoration: none;
 }
 
 .menu-toggle {
@@ -93,4 +110,8 @@
 }
 .is-open {
   display: block;
+}
+
+.navbar__close-icon {
+  fill: black;
 }
