@@ -138,6 +138,48 @@ button:hover {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  position: relative;
+}
+.delivery__title::after {
+  content: "";
+  display: block;
+  width: 148px;
+  border: 1px solid #000000;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+.delivery__list {
+  list-style: none;
+  counter-reset: li-counter;
+  padding-left: 0;
+}
+.delivery__item {
+  counter-increment: li-counter;
+  margin-bottom: 15px;
+  display: table;
+  font-weight: 500;
+  font-size: 14px;
+}
+.delivery__item-position {
+  padding: 0 8px 6px 8px;
+  display: table-cell;
+  line-height: 17px;
+}
+.delivery__item::before {
+  display: inline-block;
+  content: counter(li-counter);
+  vertical-align: top;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px solid black;
+  border-radius: 50px;
 }
 
 .global-components {
