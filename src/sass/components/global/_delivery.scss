@@ -22,6 +22,7 @@
     list-style: none;
     counter-reset: li-counter;
     padding-left: 0;
+    margin-bottom: 26px;
   }
   &__item {
     counter-increment: li-counter;
@@ -51,7 +52,17 @@
   }
 
   &__picture {
-    width: 320px;
+    width: 100%;
     height: 135px;
+
+    &-full-width {
+      left: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      max-width: 100vw;
+      position: relative;
+      right: 50%;
+      width: 100vw;
+    }
   }
 }
