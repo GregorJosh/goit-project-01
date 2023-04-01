@@ -181,6 +181,10 @@ button:hover {
   border: 1px solid black;
   border-radius: 50px;
 }
+.delivery__picture {
+  width: 320px;
+  height: 135px;
+}
 
 .global-components {
   border: 1px solid red;
