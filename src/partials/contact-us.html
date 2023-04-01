@@ -1,6 +1,6 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="contact">
-    <button class="close-btn" type="button" data-modal-close>&#10005;</button>
+    <button class="close-btn" type="button">&#10005;</button>
     <h3 class="contact__heading">Contact us</h3>
     <p class="contact__description">
       If you have any additional questions or you want to clarify something before you make an order
@@ -12,15 +12,19 @@
         <input
           class="form-field__text-input contact__text-input"
           type="text"
-          id="name"
-          name="name"
-          placeholder="Kristin Watson"
+          id="user-name"
+          name="user-name"
+          placeholder="Your name"
           pattern="[A-Za-z0-9]+"
         />
-        <svg class="form-field__correct-state-icon" width="20" height="20">
+        <svg
+          class="form-field__correct-state-icon contact__correct-state-icon"
+          width="20"
+          height="20"
+        >
           <use href="./images/global/svg/text-input-states.svg#correct-state"></use>
         </svg>
-        <svg class="form-field__error-state-icon" width="20" height="20">
+        <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
           <use href="./images/global/svg/text-input-states.svg#error-state"></use>
         </svg>
       </label>
@@ -29,20 +33,24 @@
         <input
           class="form-field__text-input contact__text-input"
           type="email"
-          id="email"
-          name="email"
-          placeholder="kristin.watson@example.com"
-          pattern="[A-Za-z0-9]+"
+          id="user-email"
+          name="user-email"
+          placeholder="Your email"
         />
-        <svg class="form-field__correct-state-icon" width="20" height="20">
+        <svg
+          class="form-field__correct-state-icon contact__correct-state-icon"
+          width="20"
+          height="20"
+        >
           <use href="./images/global/svg/text-input-states.svg#correct-state"></use>
         </svg>
-        <svg class="form-field__error-state-icon" width="20" height="20">
+        <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
           <use href="./images/global/svg/text-input-states.svg#error-state"></use>
         </svg>
       </label>
-      <button class="button contact__button" type="submit">Send</button>
+      <button class="button contact__button" type="button" data-modal-close pop-up-open>
+        Send
+      </button>
     </form>
   </div>
 </div>
-<script src="./js/modal.js"></script>
