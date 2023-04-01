@@ -76,18 +76,27 @@
 
 /* ------ Modal for mobile menu ------*/
 
+.menu-toggle {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.is-open {
+  display: block;
+}
+
 .navbar__modal {
   display: none;
   position: fixed;
   inset: 0;
-  color: $color2;
+  color: #e86f54;
   background-color: $brandColor1;
   z-index: 1;
   text-align: right;
 }
 
-// .navbar__modal-menu{
-//     display: flex;
+// .navbar__modal-menu {
+//   min-width: 320px;
 // }
 
 .navbar__modal-menu-list {
@@ -101,6 +110,10 @@
 
 .navbar__modal-menu-list .navbar__modal-menu-link {
   text-decoration: none;
+  color: $color2;
+  font-size: 20px;
+  line-height: 24px;
+  //   margin: 0 0 26px 0;
 }
 
 .menu-toggle {
@@ -112,6 +125,21 @@
   display: block;
 }
 
+.navbar__close {
+  background: none;
+  border: none;
+  fill: $color2;
+  cursor: pointer;
+}
+
 .navbar__close-icon {
-  fill: black;
+  fill: $color2;
+}
+
+.navbar__close-icon:hover,
+.navbar__closes-icon:focus {
+  fill: $color1;
+  outline: none;
+  transition: fill 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
