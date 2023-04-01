@@ -12,8 +12,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  margin: 0 auto 0;
-  padding: 28px 26px;
+  padding: 28px 16px;
   width: 272px;
   background-color: $color2;
 
@@ -26,6 +25,7 @@
 
   &__description {
     font-size: 12px;
+    font-weight: 500;
     color: #5c5c5c;
   }
 }
@@ -38,6 +38,7 @@
   position: fixed;
   top: 16px;
   right: 16px;
+  font-weight: 700;
   border: none;
   background-color: transparent;
 }
@@ -57,4 +58,10 @@
   padding: 10px 0;
   font-size: 14px;
   border-radius: 8px;
+}
+
+.contact__correct-state-icon,
+.contact__error-state-icon {
+  right: 12px;
+  bottom: 7px;
 }
