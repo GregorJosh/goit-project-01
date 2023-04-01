@@ -1,0 +1,96 @@
+/* ---------------------- Navbar ---------------------- */
+
+/* Navbar Container */
+.navbar {
+  position: relative;
+  //   height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color2;
+  padding: 0 20px;
+
+  /* Mobile Styling */
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0;
+  }
+}
+
+/* Logo */
+.navbar__logo {
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Mobile Styling */
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+  }
+}
+
+/* Menu */
+.navbar__menu {
+  display: none;
+
+  /* Mobile Styling */
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 20px;
+  }
+}
+
+.navbar__menu-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color1;
+      font-weight: bold;
+      padding: 10px 0;
+
+      &:hover {
+        color: $brandColor1;
+      }
+    }
+  }
+}
+
+.navbar__modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  color: white;
+  background-color: $brandColor1;
+  z-index: 1;
+  text-align: right;
+}
+
+.navbar__modal-menu-list {
+  text-align: center;
+}
+
+.menu-toggle {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.is-open {
+  display: block;
+}
