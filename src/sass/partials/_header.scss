@@ -1,134 +1,146 @@
-/* ---------------------- Navbar ---------------------- */
+.header-wrapper {
+  border-bottom: 1px solid black;
+} /* !!! KLASA DO USUNIĘCIA !!! */
 
-/* Navbar Container */
-.navbar {
-  position: relative;
-  //   height: 60px;
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $color2;
-  //   padding: 0 20px;
-  padding: 16px 16px 0 16px;
+  padding: 24px 24px 0 24px;
 
-  /* Mobile Styling */
   @media screen and (min-width: 768px) {
-    // position: fixed;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    padding: 16px 16px 0 16px;
+    padding: 28px 24px 0 24px;
   }
 }
 
-/* Logo */
+// <!-- MENU LOGO -->
+
 .navbar__logo {
-  svg {
-    height: 100%;
-    width: 100%;
-  }
+  display: flex;
+  align-items: center;
+}
 
-  /* Mobile Styling */
+.navbar__logo--icon {
+  width: 45px;
+  height: 35px;
+
   @media screen and (min-width: 768px) {
-    margin-right: auto;
+    width: 72px;
+    height: 57px;
   }
 }
 
-/* Menu */
+// <!-- MENU LINKS -->
+
 .navbar__menu {
   display: none;
-
-  /* Mobile Styling */
-  @media screen and (min-width: 768px) {
-    display: block;
-    margin-left: 20px;
-  }
-}
-
-.navbar__menu-list {
-  display: flex;
-  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
 
-  li {
-    margin-right: 20px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    a {
-      text-decoration: none;
-      color: $color1;
-      font-weight: bold;
-      padding: 10px 0;
-
-      &:hover {
-        color: $brandColor1;
-      }
-    }
-  }
-}
-
-/* ------ Modal for mobile menu ------*/
-
-.menu-toggle {
   @media screen and (min-width: 768px) {
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 48px;
   }
 }
-.is-open {
-  display: block;
+
+.navbar__menu-list {
+  display: inline;
 }
 
-.navbar__modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  color: #e86f54;
-  background-color: $brandColor1;
-  z-index: 1;
-  text-align: right;
-}
-
-// .navbar__modal-menu {
-//   min-width: 320px;
-// }
-
-.navbar__modal-menu-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-}
-
-.navbar__modal-menu-list .navbar__modal-menu-link {
+.navbar__menu-link {
   text-decoration: none;
-  color: $color2;
+  color: $color1;
   font-size: 20px;
   line-height: 24px;
-  //   margin: 0 0 26px 0;
+
+  @media screen and (min-width: 768px) {
+    .nav__links {
+      display: flex;
+    }
+  }
 }
 
-.menu-toggle {
+// <!-- MENU ITEMS -->
+.navbar__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// <!-- menu icons -->
+
+.navbar__phone--icon {
+  width: 22px;
+  height: 22px;
+
   @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+// <!-- menu buttons -->
+.menu-toggle {
+  margin: 0;
+  padding: 0 0 0 14px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  @media (min-width: 768px) {
     display: none;
   }
 }
-.is-open {
-  display: block;
+.navbar__button--open-icon {
+  width: 24px;
+  height: 24px;
 }
 
-.navbar__close {
+// <!-- MOBILE MODAL -->
+.navbar__modal {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  // padding: 48px 40px;
+  background-color: $brandColor1;
+  z-index: 1;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.navbar__modal.is-open {
+  transform: translateX(0);
+}
+
+// <!-- MOBILE MODAL MENU BUTTONS -->
+.navbar__modal .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  fill: $color2;
+}
+
+.navbar__button--close-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/*
+.navbar__modal .menu-toggle {
   margin: 16px 16px 0 0;
   background: none;
   border: none;
+  outline: none;
   fill: $color2;
   cursor: pointer;
 }
@@ -136,11 +148,4 @@
 .navbar__close-icon {
   fill: $color2;
 }
-
-.navbar__close-icon:hover,
-.navbar__closes-icon:focus {
-  fill: $color1;
-  outline: none;
-  transition: fill 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+*/

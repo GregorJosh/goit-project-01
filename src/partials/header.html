@@ -1,53 +1,92 @@
-<header class="section navbar">
-  <div class="navbar__logo">
-    <a class="navbar__logo-link" href="#">
-      <svg class="navbar__logo-icon" width="45" height="35">
-        <use xlink:href="./images/global/svg/logo.svg#logo"></use>
-      </svg>
-    </a>
+<div class="header-wrapper"> <!--class="header-wrapper"-->
+    <div class="header-container"> <!--class="header"-->
+
+<!-- LOGO -->
+      <div class="navbar__logo">
+        <a href="#"> <!--class="logo--text"-->
+          <svg class="navbar__logo--icon">
+            <use xlink:href="./images/global/svg/logo.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+<!-- MENU LINKS -->
+
+        <ul class="navbar__menu"> <!--class="nav__links"-->
+          <li>
+            <a  class="navbar__menu-link" href="#">Anemone</a> <!--class="nav__link"-->
+          </li>
+          <li>
+            <a  class="navbar__menu-link" href="#">About us</a> <!--class="nav__link"-->
+          </li>
+          <li>
+            <a  class="navbar__menu-link" href="#">Store</a> <!--class="nav__link"-->
+          </li>
+          <li>
+            <a  class="navbar__menu-link" href="#">Delivery</a> <!--class="nav__link"-->
+          </li>
+          <li>
+            <a  class="navbar__menu-link" href="#">Blog</a> <!--class="nav__link"-->
+          </li>
+        </ul>
+
+<!-- MENU ITEMS -->
+<div class="navbar__item">
+
+<!-- menu icons -->
+          <a href="tel:+380631234567"> <!--class="contact-links__link"-->
+            <svg class="navbar__phone--icon"> <!--icon--smartphone-->
+              <use xlink:href="./images/header/svg/header-icons.svg#icon-phone"></use>
+            </svg>
+          </a>
+
+<!-- menu buttons -->
+        <button 
+          class="menu-toggle js-open-menu" 
+          aria-expanded="false" 
+          aria-controls="mobile-menu"
+          > <!--class="menu-toggle js-open-menu"-->
+          <svg class="navbar__button--open-icon"> <!--BRAK-->
+            <use xlink:href="./images/header/svg/header-icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
+</div>
 
-  <nav class="navbar__menu">
-    <ul class="navbar__menu-list">
-      <li><a href="#">Anemone</a></li>
-      <li><a href="#">About us</a></li>
-      <li><a href="#">Store</a></li>
-      <li><a href="#">Delivery</a></li>
-      <li><a href="#">Blog</a></li>
-    </ul>
-  </nav>
+<!-- MOBILE MODAL -->
 
-  <div class="navbar__phone">
-    <a class="navbar__phone-link" href="tel:+380631234567">
-      <svg class="navbar__phone-icon" width="22" height="22">
-        <use xlink:href="./images/header/svg/header-icons.svg#icon-phone"></use>
-      </svg>
-    </a>
-  </div>
+<div class="navbar__modal js-menu-container" id="mobile-menu"> <!--class="menu-container js-menu-container"-->
 
-  <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-    <svg class="" width="24" height="24">
-      <use xlink:href="./images/header/svg/header-icons.svg#icon-burger"></use>
+<!-- MOBILE MODAL MENU BUTTONS -->
+
+  <button class="menu-toggle js-close-menu"> <!--class="menu-toggle js-close-menu"-->
+    <svg class="navbar__button--close-icon" width="22" height="22"> <!--class="close-menu-button"-->
+      <use xlink:href="./images/header/svg/header-icons.svg#icon-close-x"></use>
     </svg>
   </button>
 
-  <div class="navbar__modal js-menu-modal js-menu-container">
-    <nav class="navbar__modal-menu">
-      <button class="navbar__close js-close-menu">
-        <svg class="navbar__close-icon" width="22" height="22">
-          <use xlink:href="./images/header/svg/header-icons.svg#icon-close-x"></use>
-        </svg>
-      </button>
+<!-- MOBILE MODAL MENU LINKS -->
 
-      <ul class="navbar__modal-menu-list">
-        <li><a class="navbar__modal-menu-link" href="#">Anemone</a></li>
-        <li><a class="navbar__modal-menu-link" href="#">About us</a></li>
-        <li><a class="navbar__modal-menu-link" href="#">Store</a></li>
-        <li><a class="navbar__modal-menu-link" href="#">Delivery</a></li>
-        <li><a class="navbar__modal-menu-link" href="#">Blog</a></li>
-      </ul>
-    </nav>
-  </div>
+  <ul class="navbar__mobile-menu"> <!--class="mobile-menu__sites"-->
+    <li>
+      <a  class="navbar__mobile-menu-link" href="#">Anemone</a> <!--mobile-menu__sites--page-link-->
+    </li>
+    <li>
+      <a  class="navbar__mobile-menu-link" href="#">About us</a> <!--mobile-menu__sites--page-link-->
+    </li>
+    <li>
+      <a  class="navbar__mobile-menu-link" href="#">Store</a> <!--mobile-menu__sites--page-link-->
+    </li>
+    <li>
+      <a  class="navbar__mobile-menu-link" href="#">Delivery</a> <!--mobile-menu__sites--page-link-->
+    </li>
+    <li>
+      <a  class="navbar__mobile-menu-link" href="#">Blog</a> <!--mobile-menu__sites--page-link-->
+    </li>
+  </ul>
+
+</div>
 
   <script
     defer

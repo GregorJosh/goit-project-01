@@ -1,0 +1,60 @@
+<header class="section navbar">
+  <div class="navbar__logo">
+    <a class="navbar__logo-link" href="#">
+      <svg class="navbar__logo-icon" width="45" height="35">
+        <use xlink:href="./images/global/svg/logo.svg#logo"></use>
+      </svg>
+    </a>
+  </div>
+
+  <nav class="navbar__menu">
+    <ul class="navbar__menu-list">
+      <li><a href="#">Anemone</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Store</a></li>
+      <li><a href="#">Delivery</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="navbar__phone">
+    <a class="navbar__phone-link" href="tel:+380631234567">
+      <svg class="navbar__phone-icon" width="22" height="22">
+        <use xlink:href="./images/header/svg/header-icons.svg#icon-phone"></use>
+      </svg>
+    </a>
+  </div>
+
+  <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <svg class="navbar__open-icon" width="24" height="24">
+      <use xlink:href="./images/header/svg/header-icons.svg#icon-burger"></use>
+    </svg>
+  </button>
+
+  <!-- ------ Modal for mobile menu ------ -->
+
+  <div class="navbar__modal js-menu-modal js-menu-container">
+    <nav class="navbar__modal-menu">
+      <button class="navbar__close js-close-menu">
+        <svg class="navbar__close-icon" width="22" height="22">
+          <use xlink:href="./images/header/svg/header-icons.svg#icon-close-x"></use>
+        </svg>
+      </button>
+
+      <ul class="navbar__modal-menu-list">
+        <li><a class="navbar__modal-menu-link" href="#">Anemone</a></li>
+        <li><a class="navbar__modal-menu-link" href="#">About us</a></li>
+        <li><a class="navbar__modal-menu-link" href="#">Store</a></li>
+        <li><a class="navbar__modal-menu-link" href="#">Delivery</a></li>
+        <li><a class="navbar__modal-menu-link" href="#">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+</header>
