@@ -1,0 +1,49 @@
+.delivery {
+  &__list {
+    list-style: none;
+    counter-reset: li-counter;
+    padding-left: 0;
+    margin-bottom: 26px;
+  }
+  &__item {
+    counter-increment: li-counter;
+    margin-bottom: 15px;
+    display: table;
+    font-weight: 500;
+    font-size: 14px;
+
+    &-position {
+      padding: 0 8px 6px 8px;
+      display: table-cell;
+      line-height: 17px;
+    }
+  }
+  &__item::before {
+    display: inline-block;
+    content: counter(li-counter);
+    vertical-align: top;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 135px;
+
+    &-full-width {
+      left: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      max-width: 100vw;
+      position: relative;
+      right: 50%;
+      width: 100vw;
+    }
+  }
+}
