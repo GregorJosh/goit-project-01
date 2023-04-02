@@ -52,16 +52,8 @@
 .navbar__menu-link {
   text-decoration: none;
   color: $color1;
-  // font-size: 20px;
-  // line-height: 24px;
-
-  @media screen and (min-width: 768px) {
-    font-size: 1.25em;
-    line-height: 1.5em;
-    .nav__links {
-      display: flex;
-    }
-  }
+  font-size: 1.25em;
+  line-height: 1.5em;
 }
 
 // <!-- MENU ITEMS -->
@@ -154,6 +146,6 @@
   color: $color2;
 
   text-decoration: none;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.25em;
+  line-height: 1.5em;
 }
