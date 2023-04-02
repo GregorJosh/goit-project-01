@@ -2,10 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 24px 0 24px;
+
+  // padding: 16px 16px 0 16px;
+  // padding: 16px 0 0 0;
+  margin: 16px 0 0 0;
 
   @media screen and (min-width: 768px) {
-    padding: 28px 24px 0 24px;
+    // padding: 24px 24px 0 24px;
+    // padding: 24px 0 0 0;
+    margin: 24px 0 0 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    // padding: 28px 28px 0 28px;
+    // padding: 28px 0 0 0;
+    margin: 28px 0 0 0;
   }
 }
 
