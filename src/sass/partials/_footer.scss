@@ -1,0 +1,111 @@
+.container--footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer {
+  padding: 32px 0;
+  color: $color2;
+  background-color: $color1;
+  font-family: $fontFamily2;
+  // &__logo {
+  //   display: none;
+  //   visibility: hidden;
+  //   fill: $color2;
+  // }
+}
+// FOOTER NAVIGATION:
+.footer-nav {
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.21;
+    margin-bottom: 18px;
+    margin-top: 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    padding: 0;
+    padding-bottom: 32px;
+  }
+  &__li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  &__item {
+    text-decoration: none;
+    color: $color2;
+  }
+}
+// FOOTER OPENING TIMES:
+.contener-footer-openings {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer-openings-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.21;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+.footer-openings-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__item {
+    margin: 0;
+  }
+}
+// FOOTER CONTACT ADDRESS:
+.footer-address {
+  // display: flex;
+  // flex-direction: column;
+  font-style: normal;
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.21;
+    margin-bottom: 18px;
+    margin-top: 0;
+  }
+  &__list {
+    // display: flex;
+    // flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  &__li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  &__item {
+    text-decoration: none;
+    color: $color2;
+  }
+}
+// SOCIAL LINKS:
+.footer-social-list {
+  gap: 14px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 54px;
+}

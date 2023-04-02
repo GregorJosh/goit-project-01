@@ -1,0 +1,40 @@
+.products {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+
+.product-card {
+  margin: 0;
+
+  &__image {
+    display: block;
+    max-width: 100%;
+  }
+
+  &__heading {
+    margin: 12px 0 6px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+
+  &__price {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    opacity: 0.6;
+  }
+}
+
+.store__button {
+  display: block;
+  margin: 0 auto 0;
+}

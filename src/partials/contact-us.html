@@ -1,0 +1,56 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="contact">
+    <button class="close-btn" type="button">&#10005;</button>
+    <h3 class="contact__heading">Contact us</h3>
+    <p class="contact__description">
+      If you have any additional questions or you want to clarify something before you make an order
+      please fill in your contact details. We will call you back.
+    </p>
+    <form>
+      <label class="form-field contact__form-field" for="name">
+        Name
+        <input
+          class="form-field__text-input contact__text-input"
+          type="text"
+          id="user-name"
+          name="user-name"
+          placeholder="Your name"
+          pattern="[A-Za-z0-9]+"
+        />
+        <svg
+          class="form-field__correct-state-icon contact__correct-state-icon"
+          width="20"
+          height="20"
+        >
+          <use href="./images/global/svg/text-input-states.svg#correct-state"></use>
+        </svg>
+        <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
+          <use href="./images/global/svg/text-input-states.svg#error-state"></use>
+        </svg>
+      </label>
+      <label class="form-field contact__form-field" for="email">
+        Email
+        <input
+          class="form-field__text-input contact__text-input"
+          type="email"
+          id="user-email"
+          name="user-email"
+          placeholder="Your email"
+        />
+        <svg
+          class="form-field__correct-state-icon contact__correct-state-icon"
+          width="20"
+          height="20"
+        >
+          <use href="./images/global/svg/text-input-states.svg#correct-state"></use>
+        </svg>
+        <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
+          <use href="./images/global/svg/text-input-states.svg#error-state"></use>
+        </svg>
+      </label>
+      <button class="button contact__button" type="button" data-modal-close pop-up-open>
+        Send
+      </button>
+    </form>
+  </div>
+</div>
