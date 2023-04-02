@@ -39,6 +39,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 48px;
   }
@@ -51,10 +52,12 @@
 .navbar__menu-link {
   text-decoration: none;
   color: $color1;
-  font-size: 20px;
-  line-height: 24px;
+  // font-size: 20px;
+  // line-height: 24px;
 
   @media screen and (min-width: 768px) {
+    font-size: 1.25em;
+    line-height: 1.5em;
     .nav__links {
       display: flex;
     }
