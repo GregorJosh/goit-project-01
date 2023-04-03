@@ -1,3 +1,11 @@
 .blog {
-    
+}
+
+.blog__slider {
+  display: flex;
+  //   gap: 32px;
+  gap: 2em;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
 }
