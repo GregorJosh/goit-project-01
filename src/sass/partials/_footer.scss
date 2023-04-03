@@ -15,17 +15,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     @media screen and (min-width: 480px) {
-      max-width: 480px;
+      // max-width: 480px;
       margin: auto;
     }
     @media screen and (min-width: 768px) {
-      max-width: 768px;
+      // max-width: 768px;
       flex-wrap: nowrap;
       padding-left: 9px;
       padding-right: 25px;
     }
     @media screen and (min-width: 1280px) {
-      max-width: 1280px;
+      // max-width: 1280px;
       padding-right: 33px;
     }
   }
