@@ -26,12 +26,9 @@
       margin-right: 110px;
     }
   }
-  &__list {
+  &__flex {
     display: flex;
-    list-style: none;
     align-items: center;
-    padding: 0;
-    margin: 0;
     justify-content: center;
   }
   &__picture-container {
