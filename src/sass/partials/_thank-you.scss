@@ -14,7 +14,7 @@
   }
 
   &__heading {
-    margin: 16px auto 14px;
+    margin: 0 auto 14px;
     text-align: center;
     font-size: 20px;
     font-weight: 600;
@@ -26,5 +26,26 @@
     font-weight: 500;
     color: #5c5c5c;
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .thank-you {
+    padding: 54px 32px;
+    width: 480px;
+
+    &__image {
+      margin: 0 auto;
+      width: 367px;
+    }
+
+    &__heading {
+      margin: 16px auto;
+      font-size: 32px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
   }
 }
