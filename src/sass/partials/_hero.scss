@@ -1,11 +1,15 @@
 .hero {
-  position: relative;
-  margin-bottom: 136px;
+  padding: 40px 0 100px;
+
+  &__container {
+    position: relative;
+  }
+
   &__heading {
     font-weight: 400;
     font-size: 0.875em;
     line-height: 1.1em;
-    margin-right: 0.875em;
+    margin: 0 0.875em;
   }
   &__list {
     display: flex;
@@ -15,19 +19,19 @@
     margin: 0;
     justify-content: center;
   }
-  &__picture-container{
+  &__picture-container {
     width: 145px;
     height: 274px;
   }
   &__picture {
     overflow: hidden;
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: 60%;
-border-radius: 226px;
-    }
-  
+    border-radius: 226px;
+  }
+
   &__title {
     z-index: 2;
     font-size: 52px;
@@ -35,20 +39,19 @@ border-radius: 226px;
     font-style: normal;
     text-align: center;
     position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 .button__shop-now {
-    cursor: pointer;
-    border: none;
-    background: none;
-    padding: 0;
-  }
- .button__main-icon {
-    width: 76px;
-    height: 76px;
-  }
-
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+.button__main-icon {
+  width: 76px;
+  height: 76px;
+}
