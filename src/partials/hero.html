@@ -4,24 +4,18 @@
       <h2 class="hero__heading">flower<br />studio</h2>
 
       <div class="hero__picture-container">
-        <img
-          class="hero__picture-mobile"
-          alt="flower picture"
-          src="/src/images/hero/image_home_mobile.jpg"
-          srcset="/src/images/hero/image_home_mobile@2x.jpg"
-        />
-        <img
-          class="hero__picture-tablet"
-          alt="flower picture"
-          src="/src/images/hero/image_home_tablet.jpg"
-          srcset="/src/images/hero/image_home_tablet@2x.jpg"
-        />
-        <img
-          class="hero__picture-desktop"
-          alt="flower picture"
-          src="/src/images/hero/image_home_tablet.jpg"
-          srcset="/src/images/hero/image_home_tablet@2x.jpg"
-        />
+        <picture srcset="/src/images/hero/image_home_mobile.jpg"
+        class="hero__picture-mobile">
+        <img src="/src/images/hero/image_home_mobile@2x.jpg">
+      </picture>
+       <picture srcset="/src/images/hero/image_home_tablet.jpg"
+        class="hero__picture-tablet">
+        <img src="/src/images/hero/image_home_tablet@2x.jpg">
+      </picture>
+      <picture srcset="/src/images/hero/image_home_tablet.jpg"
+        class="hero__picture-desktop">
+        <img src="/src/images/hero/image_home_tablet@2x.jpg">
+      </picture>
       </div>
 
       <button class="button__shop-now" type="button" hero-open-contact-us>

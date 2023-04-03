@@ -62,7 +62,6 @@
     overflow: hidden;
     border-radius: 226px;
     object-position: 60%;
-
     @media screen and (max-width: 1024px) {
       display: none;
     }
@@ -86,6 +85,20 @@
       top: 80%;
     }
   }
+  &__title::after{
+      content: "";
+      width: 55px;
+      height: 7px;
+      background: $color1;
+      border-radius: 2px;
+      position: absolute;
+      display: block;
+      top: 15px;
+      right: 20px;
+      @media screen and (max-width: 1024px) {
+      content: none;
+    }
+    }
 }
 
 .button__shop-now {
