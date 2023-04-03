@@ -6,15 +6,33 @@
       </li>
       <li class="hero__picture-container">
         <img
-          class="hero__picture"
+          class="hero__picture-mobile"
           alt="flower picture"
           src="/src/images/hero/image_home_mobile.jpg"
           srcset="/src/images/hero/image_home_mobile@2x.jpg"
         />
+        <img
+          class="hero__picture-tablet"
+          alt="flower picture"
+          src="/src/images/hero/image_home_tablet.jpg"
+          srcset="/src/images/hero/image_home_tablet@2x.jpg"
+        />
+        <img
+          class="hero__picture-desktop"
+          alt="flower picture"
+          src="/src/images/hero/image_home_tablet.jpg"
+          srcset="/src/images/hero/image_home_tablet@2x.jpg"
+        />
       </li>
       <li>
         <button class="button__shop-now" type="button" hero-open-contact-us>
-          <svg class="button__main-icon">
+          <svg class="button__main-icon-mobile">
+            <use href="/src/images/hero/symbol-defs.svg#icon-btn-mobile"></use>
+          </svg>
+          <svg class="button__main-icon-tablet">
+            <use href="/src/images/hero/symbol-defs.svg#icon-btn-mobile"></use>
+          </svg>
+          <svg class="button__main-icon-desktop">
             <use href="/src/images/hero/symbol-defs.svg#icon-btn-mobile"></use>
           </svg>
         </button>
