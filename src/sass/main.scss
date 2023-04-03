@@ -12,6 +12,7 @@
 
 @import './components/global/general';
 @import './components/global/container';
+@import './components/global/list';
 @import './components/global/button';
 @import './components/global/logo';
 @import './components/global/form-field';
@@ -23,7 +24,10 @@
 @import './partials/hero';
 @import './partials/store';
 @import './partials/delivery';
-@import './partials/contact-us';
-@import './partials/thank-you';
+@import './partials/blog';
 @import './partials/footer';
 
+//modale
+
+@import './partials/contact-us';
+@import './partials/thank-you';
