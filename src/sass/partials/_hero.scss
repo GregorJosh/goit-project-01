@@ -1,6 +1,13 @@
 .hero {
-  padding: 40px 0 100px;
-
+  padding-top: 40px;
+  padding-bottom: 130px;
+  @media screen and (min-width: 768px) {
+    padding-top: 35px;
+    padding-bottom: 190px;
+  }
+  @media screen and (min-width: 1024px) {
+      padding-top: 60px;
+    }
   &__container {
     position: relative;
   }
@@ -10,6 +17,14 @@
     font-size: 0.875em;
     line-height: 1.1em;
     margin: 0 0.875em;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+      margin-right: 40px;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 32px;
+      margin-right: 110px;
+    }
   }
   &__list {
     display: flex;
@@ -22,14 +37,38 @@
   &__picture-container {
     width: 145px;
     height: 274px;
+    @media screen and (min-width: 768px) {
+      width: 390px;
+      height: 636px;
+    }
   }
-  &__picture {
+  &__picture-mobile {
     overflow: hidden;
     width: 100%;
     height: 100%;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__picture-tablet {
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__picture-desktop {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    object-position: 60%;
+    overflow: hidden;
     border-radius: 226px;
+    object-position: 60%;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__title {
@@ -42,6 +81,13 @@
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (min-width: 768px) {
+      font-size: 120px;
+    }
+    @media screen and (min-width: 1024px) {
+      font-size: 160px;
+      top: 80%;
+    }
   }
 }
 
@@ -51,7 +97,29 @@
   background: none;
   padding: 0;
 }
-.button__main-icon {
+.button__main-icon-mobile {
   width: 76px;
   height: 76px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.button__main-icon-tablet {
+  margin-left: 20px;
+  width: 145px;
+  height: 150px;
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.button__main-icon-desktop {
+  margin-left: 110px;
+  width: 166px;
+  height: 166px;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }
