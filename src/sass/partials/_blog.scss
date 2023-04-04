@@ -17,6 +17,10 @@
     gap: 16px;
     // flex-basis: calc((100% - 16px) / 2);
 
+    &.slider-action {
+      animation: slide 10s infinite;
+    }
+
     .slider__item {
       img {
         width: 100%;
@@ -89,9 +93,9 @@
       transition: opacity 0.2s ease;
     }
 
-    .slider__wrapper {
-      animation: slide 10s infinite;
-    }
+    // .slider__wrapper {
+    //   animation: slide 10s infinite;
+    // }
   }
 
   /*

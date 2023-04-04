@@ -238,8 +238,14 @@
 </section>
 
 <script>
+  const sliderWrapper = document.querySelector('.slider__wrapper');
+  const pictures = sliderWrapper.querySelectorAll('.slider__item');
+  const sliderButtons = document.querySelectorAll('.slider__button');
+  sliderButtons.forEach(btn =>
+    btn.addEventListener('click', e => sliderWrapper.classList.toggle('slider-action')),
+  );
+
   const scaleImages = () => {
-    const sliderWrapper = document.querySelector('.slider__wrapper');
     sliderWrapper.style.width = 'auto';
     let imageWidth = 0;
 
@@ -249,7 +255,6 @@
       imageWidth = sliderWrapper.offsetWidth / 3;
     }
 
-    const pictures = sliderWrapper.querySelectorAll('.slider__item');
     pictures.forEach(picture => (picture.style.width = `${imageWidth + 32}px`));
 
     sliderWrapper.style.width = `${pictures.length * imageWidth + 32}px`;

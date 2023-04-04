@@ -1,3 +1,4 @@
+/*
 (() => {
   const refs = {
     // openModalBtn: document.querySelector('[data-modal-open]'),
@@ -16,6 +17,7 @@
   //   function toggleModal() {
   function toggleNewsletterModal() {
     // refs.modal.classList.toggle("is-hidden");
-    refs.modal.classList.toggle('is-hidden');
+    refs.newsletterModal.classList.toggle('is-hidden');
   }
 })();
+*/
