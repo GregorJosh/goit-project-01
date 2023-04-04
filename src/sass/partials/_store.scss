@@ -12,11 +12,9 @@
 
 .product-card {
   margin: 0;
-  max-width: 136px;
 
   &__image {
-    display: block;
-    max-width: 100%;
+    width: 100%;
   }
 
   &__heading {
@@ -51,8 +49,6 @@
   }
 
   .product-card {
-    max-width: 344px;
-
     &__heading {
       margin: 16px 0 8px;
       font-size: 32px;
@@ -66,7 +62,7 @@
         height: 1px;
         background-color: $color1;
         align-self: center;
-        flex-shrink: 10000;
+        flex-shrink: 20000;
       }
     }
     &__price {
