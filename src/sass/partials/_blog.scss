@@ -51,15 +51,16 @@
     gap: 16px;
 
     .slider__item {
-      //   width: 100%;
-      //   height: auto;
-      //   margin-right: 32px;
-
       width: calc(100% / 2 - 16px);
       height: 181px;
 
       &:last-of-type {
         margin-right: 0;
+      }
+
+      @media (max-width: 767px) {
+        width: calc(100% / 2 - 16px);
+        height: 181px;
       }
 
       @media (min-width: 768px) {
@@ -144,32 +145,32 @@
   }
 
   // media query dla urządzeń mobilnych
-  @media (max-width: 767px) {
-    .slider__wrapper {
-      .slider__item {
-        width: calc(100% / 2 - 16px);
-        height: auto;
-        // margin-right: 16px;
+  //   @media (max-width: 767px) {
+  //     .slider__wrapper {
+  //       .slider__item {
+  //         width: calc(100% / 2 - 16px);
+  //         height: auto;
+  //         // margin-right: 16px;
 
-        &:last-of-type {
-          margin-right: 0;
-        }
-      }
-    }
-  }
+  //         &:last-of-type {
+  //           margin-right: 0;
+  //         }
+  //       }
+  //     }
+  //   }
 
   // media query dla urządzeń desktopowych
-  @media (min-width: 1024px) {
-    .slider__wrapper {
-      .slider__item {
-        width: calc(100% / 3 - 32px);
-        height: 421px;
-        // margin-right: 32px;
+  //   @media (min-width: 1024px) {
+  //     .slider__wrapper {
+  //       .slider__item {
+  //         width: calc(100% / 3 - 32px);
+  //         height: 421px;
+  //         // margin-right: 32px;
 
-        &:last-of-type {
-          margin-right: 0;
-        }
-      }
-    }
-  }
+  //         &:last-of-type {
+  //           margin-right: 0;
+  //         }
+  //       }
+  //     }
+  //   }
 }
