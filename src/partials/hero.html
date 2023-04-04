@@ -1,4 +1,4 @@
-<section class="section hero">
+<section  id="hero" class="section hero">
   <div class="container hero__container">
     <div class="hero__flex">
       <h2 class="hero__heading">flower<br />studio</h2>
@@ -6,20 +6,26 @@
       <div class="hero__picture-container">
         <picture>
           <source
-            srcset="
-              /src/images/hero/image_home.jpg 390w,
-              /src/images/hero/image_home@2x.jpg 780w
-              "
+            srcset="/src/images/hero/image_home.jpg 390w, /src/images/hero/image_home@2x.jpg 780w"
             media="(min-width: 1280px)"
-          />          <source
+            sizes="(min-width: 1280px) 1200px, 100vw"
+          />
+          <source
             srcset="
-              /src/images/hero/image_home_tablet.jpg 390w,
+              /src/images/hero/image_home_tablet.jpg    390w,
               /src/images/hero/image_home_tablet@2x.jpg 780w
-              "            media="(min-width: 768px)"
-          />          <img
-          src="/src/images/hero/image_home_mobile.jpg"
-          srcset="/src/images/hero/image_home_mobile.jpg 145w, /src/images/hero/image_home_mobile@2x.jpg "
-          alt="picture of the flower" />
+            "
+            media="(min-width: 768px)"
+            sizes="(min-width: 768px) 680px, 100vw"
+          />
+          <img
+            src="/src/images/hero/image_home_mobile.jpg"
+            srcset="
+              /src/images/hero/image_home_mobile.jpg    145w,
+              /src/images/hero/image_home_mobile@2x.jpg 272w
+            "
+            alt="picture of the flower"
+          />
         </picture>
       </div>
       <button class="button__shop-now" type="button" hero-open-contact-us>
