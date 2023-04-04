@@ -1,14 +1,40 @@
 .blog {
 }
 
+// <!-- ----- IMAGES ----- -->
+
 .blog__slider {
+  position: relative;
   display: flex;
-  //   gap: 32px;
   gap: 2em;
-  justify-content: space-between;
+  justify-content: center;
+  overflow-x: auto;
 }
 
 .list__item {
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+// <!-- ----- SLIDER BUTTONS ----- -->
+.slider__buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__buttons--btn {
+  width: 61px;
+  height: 61px;
+}
+
+// <!-- ----- NEWSLETTER ----- -->
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter__heading {
+}
+
+.newsletter__buttons {
 }
