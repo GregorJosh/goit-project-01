@@ -11,6 +11,9 @@
     display: table;
     font-weight: 500;
     font-size: 14px;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
 
     &-position {
       padding: 0 8px 6px 8px;
@@ -30,5 +33,10 @@
     line-height: 40px;
     border: 1px solid black;
     border-radius: 50px;
+  }
+}
+.section__heading {
+  @media screen and (min-width: 768px) {
+    font-size: 44px;
   }
 }
