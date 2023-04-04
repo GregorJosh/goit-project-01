@@ -8,10 +8,14 @@
     newsletterModal: document.querySelector('[newsletter-modal]'),
   };
 
+  //   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.openNewsletter.addEventListener('click', toggleNewsletterModal);
+  //   refs.closeModalBtn.addEventListener("click", toggleModal);
   refs.closeNewsletter.addEventListener('click', toggleNewsletterModal);
 
+  //   function toggleModal() {
   function toggleNewsletterModal() {
+    // refs.modal.classList.toggle("is-hidden");
     refs.modal.classList.toggle('is-hidden');
   }
 })();
