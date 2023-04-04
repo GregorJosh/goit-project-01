@@ -10,11 +10,6 @@
 
     contactUsModal: document.querySelector('[contact-us-modal]'),
     thankYouModal: document.querySelector('[thank-you-modal]'),
-
-    // newsletter
-    openBlogNewsletter: document.querySelector('[open-blog-newsletter]'),
-    openNewsletter: document.querySelector('[open-newsletter'),
-    newsletterModal: document.querySelector('[newsletter-modal]'),
   };
 
   refs.heroOpenContactUs.addEventListener('click', toggleContactUsModal);

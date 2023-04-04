@@ -1,0 +1,54 @@
+<div class="backdrop is-hidden" newsletter-modal>
+  <div class="contact">
+    <button class="close-btn" type="button" close-newsletter>&#10005;</button>
+    <h3 class="contact__heading">Follow to our newsletter</h3>
+    <p class="contact__description">
+      Be the first to get exclusive offers and the latest news on our product directly in your box.
+    </p>
+    <form>
+      <label class="form-field contact__form-field" for="name">
+        Name
+        <input
+          class="form-field__text-input contact__text-input"
+          type="text"
+          id="user-name"
+          name="user-name"
+          placeholder="Your name"
+          pattern="[A-Za-z0-9]+"
+        />
+        <svg
+          class="form-field__correct-state-icon contact__correct-state-icon"
+          width="20"
+          height="20"
+        >
+          <use href="./images/global/svg/text-input-states.svg#correct-state"></use>
+        </svg>
+        <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
+          <use href="./images/global/svg/text-input-states.svg#error-state"></use>
+        </svg>
+      </label>
+      <label class="form-field contact__form-field" for="email">
+        Email
+        <input
+          class="form-field__text-input contact__text-input"
+          type="email"
+          id="user-email"
+          name="user-email"
+          placeholder="Your email"
+          pattern="[A-Za-z0-9.@]+"
+        />
+        <svg
+          class="form-field__correct-state-icon contact__correct-state-icon"
+          width="20"
+          height="20"
+        >
+          <use href="./images/global/svg/text-input-states.svg#correct-state"></use>
+        </svg>
+        <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
+          <use href="./images/global/svg/text-input-states.svg#error-state"></use>
+        </svg>
+      </label>
+      <button class="button contact__button" type="button" close-newsletter>Subscribe</button>
+    </form>
+  </div>
+</div>
