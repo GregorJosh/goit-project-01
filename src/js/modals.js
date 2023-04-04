@@ -13,6 +13,7 @@
 
     openNewsletter: document.querySelector('[open-newsletter]'),
     closeNewsletter: document.querySelector('[close-newsletter]'),
+    submitNewsletter: document.querySelector('.submit__button[close-newsletter]'),
     newsletterModal: document.querySelector('[newsletter-modal]'),
   };
 
@@ -30,6 +31,7 @@
 
   refs.openNewsletter.addEventListener('click', toggleNewsletterModal);
   refs.closeNewsletter.addEventListener('click', toggleNewsletterModal);
+  refs.submitNewsletter.addEventListener('click', toggleNewsletterModal);
 
   function toggleContactUsModal() {
     refs.contactUsModal.classList.toggle('is-hidden');

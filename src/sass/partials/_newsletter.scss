@@ -63,3 +63,12 @@
     right: 24px;
   }
 }
+
+.form__validation {
+  color: red;
+  display: none;
+}
+
+.form__input:invalid + .form__validation {
+  display: block;
+}
