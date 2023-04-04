@@ -181,7 +181,7 @@
   </div>
 
   <!-- ------ NEWSLETTER MODAL ----- -->
-  <div class="backdrop is-hidden" newsletter-modal>
+  <!-- <div class="backdrop is-hidden" newsletter-modal>
     <div class="newsletter">
       <div class="left-side">
         <img src="./images/blog/image5-desktop-w390-x1.jpg" />
@@ -198,12 +198,15 @@
         <p class="form__validation">Podany adres email jest niepoprawny!</p>
       </div>
     </div>
-  </div>
+  </div> -->
 </section>
 
 <script>
+  // pobieranie klasy .slider__wrapper do zmiennej sliderWrapper
   const sliderWrapper = document.querySelector('.slider__wrapper');
+  // pobieranie klasy .slider__item do zmiennej pictures
   const pictures = sliderWrapper.querySelectorAll('.slider__item');
+  // pobieranie klasy .slider__button do zmiennej sliderButtons
   const sliderButtons = document.querySelectorAll('.slider__button');
   sliderButtons.forEach(btn =>
     btn.addEventListener('click', e => sliderWrapper.classList.toggle('slider-action')),
@@ -221,9 +224,11 @@
 
     pictures.forEach(picture => (picture.style.width = `${imageWidth + 32}px`));
 
+    //
     sliderWrapper.style.width = `${pictures.length * imageWidth + 32}px`;
   };
 
+  //
   window.addEventListener('resize', scaleImages);
   document.addEventListener('DOMContentLoaded', scaleImages);
 </script>

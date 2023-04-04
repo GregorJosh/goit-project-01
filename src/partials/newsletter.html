@@ -1,0 +1,64 @@
+<!-- ------ NEWSLETTER MODAL ----- -->
+<div class="backdrop is-hidden" newsletter-modal>
+  <div class="newsletter">
+    <picture class="newsletter__item">
+      <source
+        srcset="
+          ./images/blog/image7-desktop-w428-x1.jpg  600w,
+          ./images/blog/image7-desktop-w428-x2.jpg 1200w
+        "
+        media="(min-width: 1280px)"
+        sizes="(min-width: 1280px) 1200px, 100vw"
+      />
+      <source
+        srcset="
+          ./images/blog/image7-tablet-w588-x1.jpg 340w,
+          ./images/blog/image7-tablet-w588-x2.jpg 680w
+        "
+        media="(min-width: 768px)"
+        sizes="(min-width: 768px) 680px, 100vw"
+      />
+      <img
+        src="./images/blog/image7-mobile-w272-x1.jpg"
+        srcset="
+          ./images/blog/image7-mobile-w272-x1.jpg 136w,
+          ./images/blog/image7-mobile-w272-x2.jpg 272w
+        "
+        alt="Newsletter"
+      />
+    </picture>
+
+    <button class="close-btn" type="button" close-newsletter>&#10005;</button>
+    <h3 class="newsletter__heading">Follow to our newsletter</h3>
+    <p class="newsletter__description">
+      Be the first to get exclusive offers and the latest news on our product directly in your box.
+    </p>
+    <!-- <input type="email" class="form__input" /> -->
+    <!-- <button class="button submit__button" type="button" close-newsletter>Subscribe</button> -->
+
+    <!-- <p class="form__validation">Podany adres email jest niepoprawny!</p> -->
+    <label class="form-field newsletter__form-field" for="email">
+      Email
+      <input
+        class="form-field__text-input contact__text-input"
+        type="email"
+        id="user-email"
+        name="user-email"
+        placeholder="Your email"
+        pattern="[A-Za-z0-9.@]+"
+      />
+      <svg
+        class="form-field__correct-state-icon contact__correct-state-icon"
+        width="20"
+        height="20"
+      >
+        <use href="./images/global/svg/text-input-states.svg#correct-state"></use>
+      </svg>
+      <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
+        <use href="./images/global/svg/text-input-states.svg#error-state"></use>
+      </svg>
+
+      <button class="button submit__button" type="button" close-newsletter>Subscribe</button>
+    </label>
+  </div>
+</div>

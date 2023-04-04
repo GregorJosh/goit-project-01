@@ -1,11 +1,17 @@
-.backdrop {
+.close-btn {
   position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  top: 0.875em;
+  right: 0.875em;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: 768px) {
+    .close-btn {
+      top: 1.5em;
+      right: 1.5em;
+    }
+  }
 }
 
 .newsletter {
@@ -13,62 +19,94 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 28px 16px;
+  display: flex;
+  flex-direction: column;
   width: 272px;
+  height: 380px;
   background-color: $color2;
 
+  &__item {
+    height: 100%;
+    max-height: 7.5625em;
+    margin: 0 0 1.125em 0;
+  }
+
   &__heading {
-    margin: 0 0 14px 0;
-    font-size: 20px;
+    margin: 0 0 18px 0;
+    padding: 0 16px;
+    font-size: 1.175em;
     font-weight: 600;
-    line-height: 1.25;
+    line-height: 1.4375em;
+    text-align: center;
   }
 
   &__description {
-    font-size: 12px;
-    font-weight: 500;
+    margin: 0 0 18px 0;
+    padding: 0 16px;
+    font-size: 0.75em;
     color: #5c5c5c;
+    padding: 0 18px;
+    text-align: center;
+    line-height: 1em;
   }
-}
 
-.is-hidden {
-  display: none;
-}
-
-.close-btn {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  font-weight: 700;
-  border: none;
-  background-color: transparent;
-}
-
-@media (min-width: 768px) {
-  .newsletter {
-    padding: 48px 32px;
-    width: 480px;
+  @media (min-width: 768px) {
+    //   padding: 48px 32px;
+    width: 644px;
+    height: 588px;
 
     &__heading {
       margin: 0 0 24px 0;
       font-size: 32px;
     }
+
     &__description {
       font-size: 16px;
     }
   }
+}
 
-  .close-btn {
-    top: 24px;
-    right: 24px;
+// .newsletter__item {
+//     height: 100%;
+//     max-height: 7.5625em;
+//   }
+
+// .form__validation {
+//   color: red;
+//   display: none;
+// }
+
+// .form__input:invalid + .form__validation {
+//   display: block;
+// }
+
+.newsletter__form-field {
+  //   margin-bottom: 25px;
+  padding: 0 16px;
+  font-size: 10px;
+}
+
+.submit__button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  font-size: 14px;
+  border-radius: 8px;
+
+  @media (min-width: 768px) {
+    margin-top: 14px;
+    padding: 14px 0;
+    font-size: 18px;
   }
 }
 
-.form__validation {
-  color: red;
-  display: none;
-}
+.contact__correct-state-icon,
+.contact__error-state-icon {
+  right: 22px;
+  bottom: 60px;
 
-.form__input:invalid + .form__validation {
-  display: block;
+  @media (min-width: 768px) {
+    right: 16px;
+    bottom: 14px;
+  }
 }
