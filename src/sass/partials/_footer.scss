@@ -14,10 +14,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media screen and (min-width: 480px) {
-      // max-width: 480px;
-      margin: auto;
-    }
+    // @media screen and (min-width: 480px) {
+    //   max-width: 480px;
+    // }
     @media screen and (min-width: 768px) {
       // max-width: 768px;
       flex-wrap: nowrap;
@@ -43,10 +42,8 @@
 // FOOTER NAVIGATION:
 .footer-nav {
   flex-basis: 50%;
-  flex-grow: 1;
   @media screen and (min-width: 768px) {
     flex-basis: 144px;
-    flex-grow: 0;
   }
   @media screen and (min-width: 1280px) {
     flex-basis: 116px;
@@ -109,11 +106,9 @@
 // FOOTER ADDRESS CONTACT:
 .footer-address {
   flex-basis: 50%;
-  flex-grow: 1;
   font-style: normal;
   @media screen and (min-width: 768px) {
     flex-basis: auto;
-    flex-grow: 0;
   }
   &__name {
     font-weight: 700;
