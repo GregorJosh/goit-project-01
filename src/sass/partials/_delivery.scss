@@ -19,6 +19,11 @@
       padding: 0 8px 6px 8px;
       display: table-cell;
       line-height: 17px;
+
+      @media screen and (min-width: 768px) {
+        padding: 0 20px 3px 20px;
+        line-height: 29px;
+      }
     }
   }
   &__item::before {
@@ -39,4 +44,7 @@
   @media screen and (min-width: 768px) {
     font-size: 44px;
   }
+}
+.container {
+  margin: 0 24px;
 }
