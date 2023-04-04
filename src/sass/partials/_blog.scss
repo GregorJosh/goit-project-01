@@ -6,6 +6,9 @@
   //   gap: 32px;
   gap: 2em;
   justify-content: space-between;
+}
 
-  flex-wrap: wrap;
+.list__item {
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
