@@ -4,20 +4,24 @@
       <h2 class="hero__heading">flower<br />studio</h2>
 
       <div class="hero__picture-container">
-        <picture srcset="/src/images/hero/image_home_mobile.jpg"
-        class="hero__picture-mobile">
-        <img class="hero__picture-mobile" src="/src/images/hero/image_home_mobile@2x.jpg">
-      </picture>
-       <picture srcset="/src/images/hero/image_home_tablet.jpg"
-        class="hero__picture-tablet">
-        <img class="hero__picture-tablet" src="/src/images/hero/image_home_tablet@2x.jpg">
-      </picture>
-      <picture srcset="/src/images/hero/image_home_tablet.jpg"
-        class="hero__picture-desktop">
-        <img class="hero__picture-desktop" src="/src/images/hero/image_home_tablet@2x.jpg">
-      </picture>
+        <picture>
+          <source
+            srcset="
+              /src/images/hero/image_home.jpg 390w,
+              /src/images/hero/image_home@2x.jpg 780w
+              "
+            media="(min-width: 1280px)"
+          />          <source
+            srcset="
+              /src/images/hero/image_home_tablet.jpg 390w,
+              /src/images/hero/image_home_tablet@2x.jpg 780w
+              "            media="(min-width: 768px)"
+          />          <img
+          src="/src/images/hero/image_home_mobile.jpg"
+          srcset="/src/images/hero/image_home_mobile.jpg 145w, /src/images/hero/image_home_mobile@2x.jpg "
+          alt="picture of the flower" />
+        </picture>
       </div>
-
       <button class="button__shop-now" type="button" hero-open-contact-us>
         <svg class="button__main-icon-mobile">
           <use href="/src/images/hero/symbol-defs.svg#icon-btn-mobile"></use>
