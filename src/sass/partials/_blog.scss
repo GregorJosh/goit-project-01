@@ -38,3 +38,138 @@
 
 .newsletter__buttons {
 }
+
+// TEST
+.slider {
+  position: relative;
+  overflow: hidden;
+
+  .slider__wrapper {
+    display: flex;
+
+    transition: transform 0.5s ease;
+    gap: 16px;
+
+    .slider__item {
+      //   width: 100%;
+      //   height: auto;
+      //   margin-right: 32px;
+
+      width: calc(100% / 2 - 16px);
+      height: 181px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      @media (min-width: 768px) {
+        width: calc(100% / 3 - 32px);
+        height: 398px;
+      }
+
+      @media (min-width: 1024px) {
+        width: calc(100% / 3 - 32px);
+        height: 421px;
+      }
+    }
+  }
+
+  .slider__buttons {
+    position: relative;
+    .slider__button {
+      display: inline-block;
+      padding: 8px 16px;
+      margin: 0 8px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        background-color: #555;
+      }
+    }
+
+    .slider__button--prev {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .slider__button--next {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.2s ease;
+    }
+  }
+
+  &:hover {
+    .slider__button--prev {
+      opacity: 1;
+      visibility: visible;
+    }
+    .slider__slider__button--next {
+      opacity: 1;
+      visibility: visible;
+    }
+    .slider__wrapper {
+      animation: slide 10s infinite;
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+
+    25% {
+      transform: translateX(-25%);
+    }
+
+    50% {
+      transform: translateX(-50%);
+    }
+
+    75% {
+      transform: translateX(-75%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  // media query dla urządzeń mobilnych
+  @media (max-width: 767px) {
+    .slider__wrapper {
+      .slider__item {
+        width: calc(100% / 2 - 16px);
+        height: auto;
+        // margin-right: 16px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  // media query dla urządzeń desktopowych
+  @media (min-width: 1024px) {
+    .slider__wrapper {
+      .slider__item {
+        width: calc(100% / 3 - 32px);
+        height: 421px;
+        // margin-right: 32px;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
