@@ -4,7 +4,7 @@
     <!-- ----- SLIDER IMAGES ----- -->
     <div class="slider">
       <div class="slider__wrapper">
-        <img
+        <!-- <img
           class="slider__item"
           src="./images/blog/image1-desktop-w390-x1.jpg"
           alt="Slide 1"
@@ -39,9 +39,9 @@
           src="./images/blog/image6-desktop-w390-x1.jpg"
           alt="Slide 1"
           srcset="./images/blog/image6-desktop-w390-x2.jpg 2x"
-        />
+        /> -->
 
-        <!-- <picture class="slider__item">
+        <picture class="slider__item">
           <source
             srcset="
               ./images/blog/image1-desktop-w390-x1.jpg  600w,
@@ -196,7 +196,7 @@
             "
             alt="Slide 6"
           />
-        </picture> -->
+        </picture>
       </div>
 
       <!-- ----- SLIDER BUTTONS ----- -->
@@ -236,3 +236,25 @@
     </div>
   </div>
 </section>
+
+<script>
+  const scaleImages = () => {
+    const sliderWrapper = document.querySelector('.slider__wrapper');
+    sliderWrapper.style.width = 'auto';
+    let imageWidth = 0;
+
+    if (document.body.offsetWidth < 1280) {
+      imageWidth = sliderWrapper.offsetWidth / 2;
+    } else {
+      imageWidth = sliderWrapper.offsetWidth / 3;
+    }
+
+    const pictures = sliderWrapper.querySelectorAll('.slider__item');
+    pictures.forEach(picture => (picture.style.width = `${imageWidth + 32}px`));
+
+    sliderWrapper.style.width = `${pictures.length * imageWidth + 32}px`;
+  };
+
+  window.addEventListener('resize', scaleImages);
+  document.addEventListener('DOMContentLoaded', scaleImages);
+</script>

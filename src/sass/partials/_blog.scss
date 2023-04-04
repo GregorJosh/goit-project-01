@@ -18,6 +18,12 @@
     // flex-basis: calc((100% - 16px) / 2);
 
     .slider__item {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
       &:last-of-type {
         margin-right: 0;
       }
@@ -100,11 +106,11 @@
     }
 
     25% {
-      transform: translateX(-50%);
+      transform: translateX(-33.33%);
     }
 
     50% {
-      transform: translateX(-75%);
+      transform: translateX(-66.66%);
     }
 
     75% {
@@ -132,6 +138,26 @@
       transform: translateX(100%);
     }
     */
+  }
+}
+
+@media (min-width: 1280px) {
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+
+    33% {
+      transform: translateX(-50%);
+    }
+
+    66% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 
