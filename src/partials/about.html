@@ -1,0 +1,60 @@
+<section class="about section" id="about">
+    <div class="container">
+      <h2 class="section__heading">about</h2>
+      <div class="about__product">
+        <p class="about__text">
+          We are a minimalistic flower studio. We love people and flowers. Therefore, every day we
+          give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we
+          create is unique as you are.
+        </p>
+        <div class="about__picture-container">
+          <picture>
+            <source
+              srcset="
+                /src/images/about/image_about_desktop.jpg    390w,
+                /src/images/about/image_about_desktop@2x.jpg 780w
+              "
+              media="(min-width: 1280px)"
+              sizes="(min-width: 1280px) 1200px, 100vw"
+            />
+            <source
+              srcset="
+                /src/images/about/image_about_tablet.jpg    390w,
+                /src/images/about/image_about_tablet@2x.jpg 780w
+              "
+              media="(min-width: 768px)"
+              sizes="(min-width: 768px) 680px, 100vw"
+            />
+            <img
+              src="/src/images/about/image_about_mobile.jpg"
+              srcset="
+                /src/images/about/image_about_mobile.jpg    145w,
+                /src/images/about/image_about_mobile@2x.jpg 272w
+              "
+              alt="picture of the flower"
+            />
+          </picture>
+  
+          <!--     
+          <img
+            class="about__picture-mobile"
+            alt="pink flowers"
+            src="/src/images/about/image_about_mobile.jpg"
+            srcset="/src/images/about/image_about_mobile@2x.jpg"
+          />
+          <img
+            class="about__picture-tablet"
+            alt="pink flowers"
+            src="/src/images/about/image_about_tablet.jpg"
+            srcset="/src/images/about/image_about_tablet@2x.jpg"
+          />
+          <img
+            class="about__picture-desktop"
+            alt="pink flowers"
+            src="/src/images/about/image_about_desktop.jpg"
+            srcset="/src/images/about/image_about_desktop@2x.jpg"
+          /> -->
+        </div>
+      </div>
+    </div>
+  </section>
