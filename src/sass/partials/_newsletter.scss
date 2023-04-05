@@ -5,13 +5,16 @@
   font-weight: 700;
   border: none;
   background-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
 
   @media (min-width: 768px) {
     top: 1.5em;
     right: 1.5em;
-  }
-
-  @media (min-width: 1280px) {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -80,14 +83,28 @@
     width: 860px;
     height: 528px;
     flex-direction: row;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    &__item {
+      display: flex;
+      width: 100%;
+      max-height: 100%;
+    }
 
     &__heading {
-      margin: 0 0 24px 0;
-      font-size: 32px;
+      margin: 111px 0 24px 0;
+      padding: 0 40px;
+      font-size: 1.75em;
+      line-height: 34px;
     }
 
     &__description {
-      font-size: 16px;
+      margin: 0 0 32px 0;
+      padding: 0 48px;
+      font-size: 1em;
+      line-height: 21px;
     }
   }
 }
@@ -98,6 +115,13 @@
 
   @media (min-width: 768px) {
     padding: 0 126px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0 48px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -116,6 +140,13 @@
     padding: 14px 0;
     font-size: 18px;
   }
+
+  @media (min-width: 1280px) {
+    margin-top: 28px;
+    padding: 15px 126px;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .contact__correct-state-icon,
@@ -126,5 +157,9 @@
   @media (min-width: 768px) {
     right: 140px;
     bottom: 100px;
+  }
+  @media (min-width: 1280px) {
+    right: 60px;
+    bottom: 102px;
   }
 }
