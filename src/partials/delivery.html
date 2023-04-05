@@ -24,28 +24,18 @@
       </li>
     </ul>
   </div>
-  <picture>
-    <source
-      srcset="
-        ./images/delivery/image_delivery_desktop.jpg     600w,
-        ./images/delivery/image_delivery_desktop@2x.jpg 1200w
-      "
-      media="(min-width: 1280px)"
-      sizes="(min-width: 1280px) 1200px, 100vw"
-    />
-    <source
-      srcset="
-        ./images/delivery/image_delivery_tablet.jpg    340w,
-        ./images/delivery/image_delivery_tablet@2x.jpg 680w
-      "
-      media="(min-width: 768px)"
-      sizes="(min-width: 768px) 680px, 100vw"
-    />
-    <img
-      class="delivery__picture"
-      src="/src/images/delivery/image_delivery.jpg"
-      srcset="/src/images/delivery/image_delivery2x.jpg"
-      alt="flowers"
-    />
-  </picture>
+  <img 
+    class="delivery__picture"
+    src="/src/images/delivery/image_delivery.jpg" 
+    srcset="
+      /src/images/delivery/image_delivery.jpg 320w,
+      /src/images/delivery/image_delivery2x.jpg 640w,
+      /src/images/delivery/image_delivery_tablet.jpg 768w,
+      /src/images/delivery/image_delivery_tablet@2x.jpg 1536w,
+      /src/images/delivery/image_delivery_desktop.jpg 1280w,
+      /src/images/delivery/image_delivery_desktop@2x.jpg 2560w
+    "
+    sizes="100vw"
+    alt="flowers"
+  />
 </section>
