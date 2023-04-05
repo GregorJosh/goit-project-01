@@ -179,26 +179,6 @@
       <button class="newsletter__buttons button" type="button" open-newsletter>Subscribe</button>
     </div>
   </div>
-
-  <!-- ------ NEWSLETTER MODAL ----- -->
-  <!-- <div class="backdrop is-hidden" newsletter-modal>
-    <div class="newsletter">
-      <div class="left-side">
-        <img src="./images/blog/image5-desktop-w390-x1.jpg" />
-      </div>
-      <div class="right-side">
-        <button class="close-btn" type="button" close-newsletter>&#10005;</button>
-        <h3 class="newsletter__heading">Follow to our newsletter</h3>
-        <p class="newsletter__description">
-          Be the first to get exclusive offers and the latest news on our product directly in your
-          box.
-        </p>
-        <button class="button submit__button" type="button" close-newsletter>Subscribe</button>
-        <input type="email" class="form__input" />
-        <p class="form__validation">Podany adres email jest niepoprawny!</p>
-      </div>
-    </div>
-  </div> -->
 </section>
 
 <script>
@@ -208,6 +188,7 @@
   const pictures = sliderWrapper.querySelectorAll('.slider__item');
   // pobieranie klasy .slider__button do zmiennej sliderButtons
   const sliderButtons = document.querySelectorAll('.slider__button');
+
   sliderButtons.forEach(btn =>
     btn.addEventListener('click', e => sliderWrapper.classList.toggle('slider-action')),
   );
