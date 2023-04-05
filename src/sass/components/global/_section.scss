@@ -21,3 +21,11 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .section {
+        &__heading {
+            font-size: 44px;
+        }
+    }
+}
