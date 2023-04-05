@@ -37,14 +37,6 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
-    @media screen and (min-width: 768px) {
-      gap: 20px;
-    }
-
-    @media screen and (min-width: 1024px){
-      gap: 110px;
-    }
   }
 
   &__picture-container {
