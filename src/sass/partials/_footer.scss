@@ -1,44 +1,49 @@
 .footer {
   padding: 32px 0;
+
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 54px;
   }
+
   @media screen and (min-width: 1280px) {
     padding: 72px 0;
   }
+
   color: $color2;
   background-color: $color1;
   font-family: $fontFamily2;
+
   &__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    // @media screen and (min-width: 480px) {
-    //   max-width: 480px;
-    // }
+ 
     @media screen and (min-width: 768px) {
-      // max-width: 768px;
       flex-wrap: nowrap;
+      justify-content: space-between;
       padding-left: 9px;
       padding-right: 25px;
     }
+
     @media screen and (min-width: 1280px) {
-      // max-width: 1280px;
       padding-right: 33px;
     }
   }
+
   &__logo {
     fill: $color2;
   }
+
   &__logo-container {
     display: none;
+
     @media screen and (min-width: 1280px) {
       display: flex;
       padding-right: 114px;
     }
   }
 }
+
 // FOOTER NAVIGATION:
 .footer-nav {
   flex-basis: 50%;

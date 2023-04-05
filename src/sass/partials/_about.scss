@@ -1,0 +1,24 @@
+.about__product {
+  display: flex;
+  flex-direction: column;
+
+  .about__text {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__product {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 32px;
+
+    .about__text {
+      font-size: 20px;
+      max-width: calc(100% / 2 - 16px);
+    }
+  }
+}

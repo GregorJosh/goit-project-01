@@ -6,7 +6,10 @@
       <div class="hero__picture-container">
         <picture>
           <source
-            srcset="/src/images/hero/image_home.jpg 390w, /src/images/hero/image_home@2x.jpg 780w"
+            srcset="
+              /src/images/hero/image_home.jpg     390w, 
+              /src/images/hero/image_home@2x.jpg  780w
+            "
             media="(min-width: 1280px)"
             sizes="(min-width: 1280px) 1200px, 100vw"
           />
@@ -30,13 +33,13 @@
       </div>
       <button class="button__shop-now" type="button" hero-open-contact-us>
         <svg class="button__main-icon-mobile">
-          <use href="/src/images/hero/symbol-defs.svg#icon-btn-mobile"></use>
+          <use href="/src/images/global/svg/sprite.svg#icon-btn-mobile"></use>
         </svg>
         <svg class="button__main-icon-tablet">
-          <use href="/src/images/hero/symbol-defs.svg#icon-btn-tablet"></use>
+          <use href="/src/images/global/svg/sprite.svg#icon-btn-tablet"></use>
         </svg>
         <svg class="button__main-icon-desktop">
-          <use href="/src/images/hero/symbol-defs.svg#icon-Button_main"></use>
+          <use href="/src/images/global/svg/sprite.svg#icon-Button_main"></use>
         </svg>
       </button>
     </div>

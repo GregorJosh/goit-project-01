@@ -1,0 +1,39 @@
+<section class="about section" id="about">
+    <div class="container">
+      <h2 class="section__heading">about</h2>
+      <div class="about__product">
+        <p class="about__text">
+          We are a minimalistic flower studio. We love people and flowers. Therefore, every day we
+          give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we
+          create is unique as you are.
+        </p>
+        <div class="about__picture-container">
+          <picture>
+            <source
+              srcset="
+                /src/images/about/image_about_desktop.jpg    632w,
+                /src/images/about/image_about_desktop@2x.jpg 1264w
+              "
+              media="(min-width: 1280px)"
+              sizes="(min-width: 1280px) 1200px, 100vw"
+            />
+            <source
+              srcset="
+                /src/images/about/image_about_tablet.jpg    344w,
+                /src/images/about/image_about_tablet@2x.jpg 688w
+              "
+              media="(min-width: 768px)"
+              sizes="(min-width: 768px) 680px, 100vw"
+            />
+            <img
+              src="/src/images/about/image_about_mobile.jpg"
+              srcset="
+                /src/images/about/image_about_mobile.jpg    288w,
+                /src/images/about/image_about_mobile@2x.jpg 576w
+              "
+              alt="picture of the flower"
+            />
+          </picture>
+        </div>
+    </div>
+  </section>
