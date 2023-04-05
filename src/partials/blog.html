@@ -1,25 +1,215 @@
 <section class="section blog" id="blog">
-    <div class="container">
-        <h2 class="section__heading">Blog</h2>
-        <ul class="blog__slider list">
-            <li class="list__item">
-                <img src="./images/blog/image1-mobile-w136-x1.jpg" />
-            </li>
-            <li class="list__item">
-                <img src="./images/blog/image1-mobile-w136-x1.jpg" />
-            </li>
-            <li class="list__item">
-                <img src="./images/blog/image1-mobile-w136-x1.jpg" />
-            </li>
-            <li class="list__item">
-                <img src="./images/blog/image1-mobile-w136-x1.jpg" />
-            </li>
-            <li class="list__item">
-                <img src="./images/blog/image1-mobile-w136-x1.jpg" />
-            </li>
-            <li class="list__item">
-                <img src="./images/blog/image1-mobile-w136-x1.jpg" />
-            </li>
-        </ul>
+  <div class="container">
+    <h2 class="section__heading">Blog</h2>
+    <!-- ----- SLIDER IMAGES ----- -->
+    <div class="slider">
+      <div class="slider__wrapper">
+        <picture class="slider__item">
+          <source
+            srcset="
+              ./images/blog/image1-desktop-w390-x1.jpg  600w,
+              ./images/blog/image1-desktop-w390-x2.jpg 1200w
+            "
+            media="(min-width: 1280px)"
+            sizes="(min-width: 1280px) 1200px, 100vw"
+          />
+          <source
+            srcset="
+              ./images/blog/image1-tablet-w344-x1.jpg 340w,
+              ./images/blog/image1-tablet-w344-x2.jpg 680w
+            "
+            media="(min-width: 768px)"
+            sizes="(min-width: 768px) 680px, 100vw"
+          />
+          <img
+            src="./images/blog/image1-mobile-w136-x1.jpg"
+            srcset="
+              ./images/blog/image1-mobile-w136-x1.jpg 136w,
+              ./images/blog/image1-mobile-w136-x2.jpg 272w
+            "
+            alt="Slide 1"
+          />
+        </picture>
+        <picture class="slider__item">
+          <source
+            srcset="
+              ./images/blog/image2-desktop-w390-x1.jpg  600w,
+              ./images/blog/image2-desktop-w390-x2.jpg 1200w
+            "
+            media="(min-width: 1280px)"
+            sizes="(min-width: 1280px) 1200px, 100vw"
+          />
+          <source
+            srcset="
+              ./images/blog/image2-tablet-w344-x1.jpg 340w,
+              ./images/blog/image2-tablet-w344-x2.jpg 680w
+            "
+            media="(min-width: 768px)"
+            sizes="(min-width: 768px) 680px, 100vw"
+          />
+          <img
+            src="./images/blog/image2-moblie-w136-x1.jpg"
+            srcset="
+              ./images/blog/image2-moblie-w136-x1.jpg 136w,
+              ./images/blog/image2-moblie-w136-x2.jpg 272w
+            "
+            alt="Slide 2"
+          />
+        </picture>
+        <picture class="slider__item">
+          <source
+            srcset="
+              ./images/blog/image3-desktop-w390-x1.jpg  600w,
+              ./images/blog/image3-desktop-w390-x2.jpg 1200w
+            "
+            media="(min-width: 1280px)"
+            sizes="(min-width: 1280px) 1200px, 100vw"
+          />
+          <source
+            srcset="
+              ./images/blog/image3-tablet-w344-x1.jpg 340w,
+              ./images/blog/image3-tablet-w344-x2.jpg 680w
+            "
+            media="(min-width: 768px)"
+            sizes="(min-width: 768px) 680px, 100vw"
+          />
+          <img
+            src="./images/blog/image3-mobile-w136-x1.jpg"
+            srcset="
+              ./images/blog/image3-mobile-w136-x1.jpg 136w,
+              ./images/blog/image3-mobile-w136-x2.jpg 272w
+            "
+            alt="Slide 3"
+          />
+        </picture>
+        <picture class="slider__item">
+          <source
+            srcset="
+              ./images/blog/image4-desktop-w390-x1.jpg  600w,
+              ./images/blog/image4-desktop-w390-x2.jpg 1200w
+            "
+            media="(min-width: 1280px)"
+            sizes="(min-width: 1280px) 1200px, 100vw"
+          />
+          <source
+            srcset="
+              ./images/blog/image4-tablet-w344-x1.jpg 340w,
+              ./images/blog/image4-tablet-w344-x2.jpg 680w
+            "
+            media="(min-width: 768px)"
+            sizes="(min-width: 768px) 680px, 100vw"
+          />
+          <img
+            src="./images/blog/image4-mobile-w136-x1.jpg"
+            srcset="
+              ./images/blog/image4-mobile-w136-x1.jpg 136w,
+              ./images/blog/image4-mobile-w136-x2.jpg 272w
+            "
+            alt="Slide 4"
+          />
+        </picture>
+        <picture class="slider__item">
+          <source
+            srcset="
+              ./images/blog/image5-desktop-w390-x1.jpg  600w,
+              ./images/blog/image5-desktop-w390-x2.jpg 1200w
+            "
+            media="(min-width: 1280px)"
+            sizes="(min-width: 1280px) 1200px, 100vw"
+          />
+          <source
+            srcset="
+              ./images/blog/image5-tablet-w344-x1.jpg 340w,
+              ./images/blog/image5-tablet-w344-x2.jpg 680w
+            "
+            media="(min-width: 768px)"
+            sizes="(min-width: 768px) 680px, 100vw"
+          />
+          <img
+            src="./images/blog/image5-mobile-w136-x1.jpg"
+            srcset="
+              ./images/blog/image5-mobile-w136-x1.jpg 136w,
+              ./images/blog/image5-mobile-w136-x2.jpg 272w
+            "
+            alt="Slide 5"
+          />
+        </picture>
+        <picture class="slider__item">
+          <source
+            srcset="
+              ./images/blog/image6-desktop-w390-x1.jpg  600w,
+              ./images/blog/image6-desktop-w390-x2.jpg 1200w
+            "
+            media="(min-width: 1280px)"
+            sizes="(min-width: 1280px) 1200px, 100vw"
+          />
+          <source
+            srcset="
+              ./images/blog/image6-tablet-w344-x1.jpg 340w,
+              ./images/blog/image6-tablet-w344-x2.jpg 680w
+            "
+            media="(min-width: 768px)"
+            sizes="(min-width: 768px) 680px, 100vw"
+          />
+          <img
+            src="./images/blog/image6-mobile-w136-x1.jpg"
+            srcset="
+              ./images/blog/image6-mobile-w136-x1.jpg 136w,
+              ./images/blog/image6-mobile-w136-x2.jpg 272w
+            "
+            alt="Slide 6"
+          />
+        </picture>
+      </div>
+
+      <!-- ----- SLIDER BUTTONS ----- -->
+      <div class="slider__buttons">
+        <svg class="slider__button slider__button--prev">
+          <use href="./images/blog/svg/arrows.svg#icon-arrow-left"></use>
+        </svg>
+        <svg class="slider__button slider__button--next">
+          <use href="./images/blog/svg/arrows.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
     </div>
+
+    <!-- ----- NEWSLETTER ----- -->
+    <div class="newsletter-container">
+      <h3 class="newsletter__heading">Follow to our newsletter</h3>
+      <button class="newsletter__buttons button" type="button" open-newsletter>Subscribe</button>
+    </div>
+  </div>
 </section>
+
+<script>
+  // pobieranie klasy .slider__wrapper do zmiennej sliderWrapper
+  const sliderWrapper = document.querySelector('.slider__wrapper');
+  // pobieranie klasy .slider__item do zmiennej pictures
+  const pictures = sliderWrapper.querySelectorAll('.slider__item');
+  // pobieranie klasy .slider__button do zmiennej sliderButtons
+  const sliderButtons = document.querySelectorAll('.slider__button');
+
+  sliderButtons.forEach(btn =>
+    btn.addEventListener('click', e => sliderWrapper.classList.toggle('slider-action')),
+  );
+
+  const scaleImages = () => {
+    sliderWrapper.style.width = 'auto';
+    let imageWidth = 0;
+
+    if (document.body.offsetWidth < 1280) {
+      imageWidth = sliderWrapper.offsetWidth / 2;
+    } else {
+      imageWidth = sliderWrapper.offsetWidth / 3;
+    }
+
+    pictures.forEach(picture => (picture.style.width = `${imageWidth + 32}px`));
+
+    //
+    sliderWrapper.style.width = `${pictures.length * imageWidth + 32}px`;
+  };
+
+  //
+  window.addEventListener('resize', scaleImages);
+  document.addEventListener('DOMContentLoaded', scaleImages);
+</script>
