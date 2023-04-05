@@ -68,24 +68,4 @@
       padding-top: 10px;
     }
   }
-
-  .section__heading {
-    @media screen and (min-width: 768px) {
-      font-size: 44px;
-      margin-bottom: 63px;
-    }
-
-    @media (min-width: 1280px) {
-      margin-bottom: 103px;
-    }
-  }
-  .container {
-    @media screen and (min-width: 768px) {
-      margin: 0 24px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin: 0 24px;
-    }
-  }
 }
