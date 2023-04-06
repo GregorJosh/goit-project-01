@@ -35,28 +35,34 @@
         Be the first to get exclusive offers and the latest news on our product directly in your
         box.
       </p>
-      <label class="form-field newsletter__form-field" for="email">
-        Email
-        <input
-          class="form-field__text-input contact__text-input"
-          type="email"
-          id="user-email"
-          name="user-email"
-          placeholder="Your email"
-          pattern="[A-Za-z0-9.@]+"
-        />
-        <svg
-          class="form-field__correct-state-icon contact__correct-state-icon"
-          width="20"
-          height="20"
-        >
-          <use href="./images/global/svg/sprite.svg#correct-state"></use>
-        </svg>
-        <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
-          <use href="./images/global/svg/sprite.svg#error-state"></use>
-        </svg>
-        <button class="button submit__button" type="button" close-newsletter>Subscribe</button>
-      </label>
+      <form action="javascript:void;">
+        <label class="form-field newsletter__form-field" for="email">
+          Email
+          <input
+            class="form-field__text-input contact__text-input"
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Your email"
+            pattern="[A-Za-z0-9.@]+"
+          />
+          <svg
+            class="form-field__correct-state-icon contact__correct-state-icon"
+            width="20"
+            height="20"
+          >
+            <use href="./images/global/svg/sprite.svg#correct-state"></use>
+          </svg>
+          <svg
+            class="form-field__error-state-icon contact__error-state-icon"
+            width="20"
+            height="20"
+          >
+            <use href="./images/global/svg/sprite.svg#error-state"></use>
+          </svg>
+          <button class="button submit__button" type="button" close-newsletter>Subscribe</button>
+        </label>
+      </form>
     </div>
   </div>
 </div>
