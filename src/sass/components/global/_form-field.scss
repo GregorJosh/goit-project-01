@@ -1,64 +1,93 @@
 .form-field {
+  color: $color4;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin: 0;
+  padding: 1.5em 0 0;
+
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+
+  &:hover {
+    color: $color7;
+
+    .form-field__text-input {
+      border: 1px solid $color7;
+    }
+  }
+
+  &__text-input {
+    color: $color8;
+    border: 1px solid $color5;
+    border-radius: 4px;
+    padding: 16px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $color6;
+    }
+  }
+
+  &__label {
     color: $color4;
+    position: absolute;
+    top: 0;
+  }
 
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
+  &__correct-state-icon,
+  &__error-state-icon {
+    position: absolute;
+    right: 16px;
+    bottom: 14px;
+    display: none;
+  }
 
-    font-size: 14px;
-    font-weight: 500;
-
-    &:has(&__text-input:not(:placeholder-shown):valid) {
-        color: green;
-
-        .form-field__text-input {
-            border: 1px solid green;
-        }
-
-        .form-field__correct-state-icon {
-            display: block;
-            fill: green;
-        }
-    }
-
-    &:has(&__text-input:not(:placeholder-shown):invalid) {
-        color: red;
-
-        .form-field__text-input {
-            border: 1px solid red;
-        }
-
-        .form-field__error-state-icon {
-            display: block;
-            fill: red;
-        }
-    }
-
-    &__text-input {
-        color: $color8;
-        border: 1px solid $color5;
-        border-radius: 4px;
-        padding: 16px;
-
-        &::placeholder {
-            color: $color6;
-        }
-    }
+  &:valid {
+    color: green;
 
     &:hover {
-        color: $color7;
-
-        .form-field__text-input {
-            border: 1px solid $color7;
-        }
+      color: green;
     }
 
-    &__correct-state-icon,
-    &__error-state-icon {
-        position: absolute;
-        right: 16px;
-        bottom: 14px;
-        display: none;
+    .form-field__text-input:not(:placeholder-shown) {
+      border: 1px solid green;
+
+      & + .form-field__label {
+        color: green;
+      }
+
+      & ~ .form-field__correct-state-icon {
+        display: block;
+        fill: green;
+      }
     }
+  }
+
+  &:invalid {
+    color: red;
+
+    &:hover {
+      color: red;
+    }
+
+    .form-field__text-input:not(:placeholder-shown) {
+      border: 1px solid red;
+
+      & + .form-field__label {
+        color: red;
+      }
+
+      & ~ .form-field__correct-state-icon {
+        display: block;
+        fill: red;
+      }
+    }
+  }
 }

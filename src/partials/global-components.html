@@ -19,7 +19,7 @@
 
     <h3>svg z klasą .logo</h3>
     <svg class="logo" width="41" height="32">
-      <use href="./images/global/svg/logo.svg#logo"></use>
+      <use href="./images/global/svg/sprite.svg#logo"></use>
     </svg>
 
     <h3>
@@ -28,8 +28,7 @@
     </h3>
     <p>Powinien reagować zmianą styli na zgodność wprowadzonych danych</p>
 
-    <label class="form-field" for="name">
-      Name
+    <fieldset class="form-field" for="name">
       <input
         class="form-field__text-input"
         type="text"
@@ -38,12 +37,13 @@
         placeholder="Your name"
         pattern="[A-Za-z0-9]+"
       />
+      <label class="form-field__label">Name</label>
       <svg class="form-field__correct-state-icon" width="20" height="20">
-        <use href="./images/global/svg/text-input-states.svg#correct-state"></use>
+        <use href="./images/global/svg/sprite.svg#correct-state"></use>
       </svg>
       <svg class="form-field__error-state-icon" width="20" height="20">
-        <use href="./images/global/svg/text-input-states.svg#error-state"></use>
+        <use href="./images/global/svg/sprite.svg#error-state"></use>
       </svg>
-    </label>
+    </fieldset>
   </div>
 </section>
