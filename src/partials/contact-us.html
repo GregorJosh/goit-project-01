@@ -7,8 +7,7 @@
       please fill in your contact details. We will call you back.
     </p>
     <form action="javascript:void;">
-      <label class="form-field contact__form-field" for="user-name">
-        Name
+      <fieldset class="form-field contact__form-field">
         <input
           class="form-field__text-input contact__text-input"
           type="text"
@@ -17,6 +16,7 @@
           placeholder="Your name"
           pattern="[A-Za-z0-9]+"
         />
+        <label class="form-field__label" for="user-name">Name</label>
         <svg
           class="form-field__correct-state-icon contact__correct-state-icon"
           width="20"
@@ -27,9 +27,8 @@
         <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
           <use href="./images/global/svg/sprite.svg#error-state"></use>
         </svg>
-      </label>
-      <label class="form-field contact__form-field" for="email">
-        Email
+      </fieldset>
+      <fieldset class="form-field contact__form-field">
         <input
           class="form-field__text-input contact__text-input"
           type="email"
@@ -38,6 +37,7 @@
           placeholder="Your email"
           pattern="[A-Za-z0-9.@]+"
         />
+        <label class="form-field__label" for="user-email"> Email </label>
         <svg
           class="form-field__correct-state-icon contact__correct-state-icon"
           width="20"
@@ -48,7 +48,7 @@
         <svg class="form-field__error-state-icon contact__error-state-icon" width="20" height="20">
           <use href="./images/global/svg/sprite.svg#error-state"></use>
         </svg>
-      </label>
+      </fieldset>
       <button class="button contact__button" type="submit" open-thank-you>Send</button>
     </form>
   </div>
