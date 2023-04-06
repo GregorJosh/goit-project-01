@@ -110,18 +110,18 @@
 }
 
 .newsletter__form-field {
-  padding: 0 16px;
+  padding: 17px 16px;
   font-size: 10px;
 
   @media (min-width: 768px) {
-    padding: 0 126px;
+    padding: 25px 115px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
   }
 
   @media (min-width: 1280px) {
-    padding: 0 48px;
+    padding: 23px 48px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -152,16 +152,16 @@
 .newsletter {
   .contact__correct-state-icon,
   .contact__error-state-icon {
-    right: 22px;
-    bottom: 60px;
+    right: 30px;
+    bottom: 78px;
   
     @media (min-width: 768px) {
-      right: 140px;
-      bottom: 100px;
+      right: 131px;
+      bottom: 125px;
     }
     @media (min-width: 1280px) {
-      right: 60px;
-      bottom: 102px;
+      right: 63px;
+      bottom: 126px;
     }
   }
 }
